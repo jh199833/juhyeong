@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>이주형 | 안내</title>
+  <meta name="description" content="이미지를 클릭하면 안내 페이지로 이동합니다." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="이주형 | 안내" />
+  <meta property="og:description" content="이미지를 클릭하면 안내 페이지로 이동합니다." />
+  <meta property="og:image" content="hero.jpg" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { --maxw: 980px; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    }
+    .wrap {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+    }
+    a {
+      display: block;
+      width: min(var(--maxw), 100%);
+      text-decoration: none;
+      outline: none;
+      border-radius: 16px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.10);
+    }
+    a:focus-visible img {
+      box-shadow: 0 0 0 4px rgba(0,0,0,.12), 0 12px 30px rgba(0,0,0,.10);
+    }
+    .hint {
+      width: min(var(--maxw), 100%);
+      margin-top: 12px;
+      text-align: center;
+      font-size: 14px;
+      color: rgba(0,0,0,.60);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div>
+      <a href="https://parkingsms.incheon.go.kr" target="_blank" rel="noopener noreferrer" aria-label="주차 단속 문자 알림 서비스로 이동">
+        <img src="hero.jpg" alt="이미지를 클릭하면 parkingsms.incheon.go.kr로 이동합니다." />
+      </a>
+      <div class="hint">이미지를 클릭하면 서비스 페이지로 이동합니다.</div>
+    </div>
+  </main>
+</body>
+</html>
